@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible problem without sharing secrets.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Never paste credentials, private keys, personal data, or proprietary source into an issue.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `oss-security-audit --version`.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal steps and harmless sample input that reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

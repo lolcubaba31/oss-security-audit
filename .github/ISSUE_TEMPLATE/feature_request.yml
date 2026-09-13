@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest a focused improvement to the local scanner.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Please describe a concrete repository-security problem. Do not include secrets or private source.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What would this help a maintainer catch or understand?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the smallest useful behavior and any output or CI implications.
+    validations:
+      required: true

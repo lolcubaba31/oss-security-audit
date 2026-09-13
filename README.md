@@ -43,9 +43,11 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 PYTHONPATH=src python -m oss_security_audit . --json
 ```
 
-Contributions that add a rule should include a focused test and keep output free of secret values. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+Contributions that add a rule should include a focused test and keep output free of secret values. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 A ready-to-copy GitHub Actions workflow is included at [docs/ci-template.yml](docs/ci-template.yml). Copy it to `.github/workflows/ci.yml` in a fork to run the tests and baseline scan on every push and pull request.
+
+See [ROADMAP.md](ROADMAP.md) for possible next checks.
 
 ## License
 
